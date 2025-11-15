@@ -150,8 +150,8 @@ def gera_frame(A, B, pA, pB, triangles, alfa, beta):
 
         xMin, xMax, yMin, yMax = _tri_bbox(triT, W, H)
 
-        for x in range(xMin, xMax + 1):
-            for y in range(xMin, xMax + 1):
+        for x in range(xMin, xMax):
+            for y in range(xMin, xMax):
                 pt = (x, y)
                 w1, w2, w3 = _transf_baricentrica(pt, triT)
                 if _check_bari(w1, w2, w3):
